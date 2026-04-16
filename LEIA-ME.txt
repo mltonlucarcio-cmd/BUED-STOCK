@@ -1,0 +1,53 @@
+═══════════════════════════════════════════════════════════════
+  BUED STOCK ALERTA — PWA para iPhone
+═══════════════════════════════════════════════════════════════
+
+Esta é a versão PWA (Progressive Web App) — funciona no iPhone
+como se fosse uma app nativa, SEM precisar da App Store.
+
+──────────────────────────────────────────────────────────────
+COMO INSTALAR NO iPHONE:
+──────────────────────────────────────────────────────────────
+
+OPÇÃO 1 — Servidor local (rede Wi-Fi):
+  1. No computador, abrir o CMD nesta pasta e executar:
+       python -m http.server 8000
+     (ou: npx serve -p 8000)
+  2. Descobrir o IP do computador (ipconfig)
+     Ex: 192.168.1.100
+  3. No iPhone (mesma Wi-Fi), abrir Safari e ir a:
+       http://192.168.1.100:8000
+  4. Tocar no botão Partilhar (quadrado com seta)
+  5. Tocar em "Adicionar ao Ecrã Principal"
+  6. Confirmar — pronto! A app aparece no ecrã do iPhone.
+
+OPÇÃO 2 — Hospedagem grátis online:
+  1. Criar conta em Netlify (netlify.com)
+  2. Arrastar esta pasta (ios-pwa) para a Netlify
+  3. Receberá um URL tipo: https://buedstock.netlify.app
+  4. Abrir no Safari do iPhone → Adicionar ao Ecrã Principal
+
+OPÇÃO 3 — GitHub Pages:
+  1. Criar repositório no GitHub
+  2. Fazer upload dos ficheiros
+  3. Activar GitHub Pages (Settings → Pages)
+  4. Abrir URL no iPhone → Adicionar ao Ecrã Principal
+
+──────────────────────────────────────────────────────────────
+FUNCIONA OFFLINE?
+──────────────────────────────────────────────────────────────
+
+SIM. O Service Worker (sw.js) guarda em cache todos os ficheiros
+na primeira visita. Depois funciona mesmo sem internet.
+
+──────────────────────────────────────────────────────────────
+LIMITAÇÕES DA PWA NO iOS:
+──────────────────────────────────────────────────────────────
+
+- Notificações push só a partir de iOS 16.4+
+- Acesso limitado a Bluetooth/USB (usa câmara normalmente)
+- Não aparece na App Store (só via link directo)
+
+Para ter app 100% nativa → usar pasta "ios-xcode-project"
+
+═══════════════════════════════════════════════════════════════

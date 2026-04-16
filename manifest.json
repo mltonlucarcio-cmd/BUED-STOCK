@@ -1,0 +1,15 @@
+{
+  "name": "BUED STOCK ALERTA",
+  "short_name": "BUED STOCK",
+  "description": "Sistema de Gestão de Vendas e Stock",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090f",
+  "theme_color": "#D4A017",
+  "lang": "pt-PT",
+  "icons": [
+    { "src": "icon.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
